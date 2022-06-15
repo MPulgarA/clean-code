@@ -8,17 +8,6 @@
     type Gender = 'M' | 'F';
 
     class Person {
-        // public name: string;
-        // public gender: Gender;
-        // public birthdate: Date;
-
-        // constructor(name: string, gender: Gender, birthdate: Date){
-        //     this.name = name;
-        //     this.gender = gender;
-        //     this.birthdate = birthdate;
-        // };
-
-        // Forma corta de manejar clases | Este código es lo mismo que el anterior, pero simplificado
         constructor(
             public name: string,
             public gender: Gender,
@@ -26,7 +15,15 @@
         ) { };
     }
 
-    const newPerson = new Person('Matías', 'M', new Date('1998-07-17'));
-    console.log(newPerson);
+    // Si se quiere extender de la clase padre, se debe crear una instancia de la misma
+    class User extends Person {
+        constructor(
+            public email: string,
+            public role: string,
+            private lastAccess: Date,
+        ){
+            super();
+        }
+    }
 
 })();
