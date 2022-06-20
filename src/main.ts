@@ -1,5 +1,5 @@
 import './style.css';
-import './clean-code/07-tarea.ts';
+import './solid/01-srp.ts';
 
 const app = document.querySelector<HTMLDivElement>('#app')!
 
