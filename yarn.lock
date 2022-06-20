@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"esbuild-darwin-64@0.14.25":
-  "integrity" "sha512-TGp8tuudIxOyWd1+8aYPxQmC1ZQyvij/AfNBa35RubixD0zJ1vkKHVAzo0Zao1zcG6pNqiSyzfPto8vmg0s7oA=="
-  "resolved" "https://registry.npmjs.org/esbuild-darwin-64/-/esbuild-darwin-64-0.14.25.tgz"
+"esbuild-darwin-arm64@0.14.25":
+  "integrity" "sha512-oTcDgdm0MDVEmw2DWu8BV68pYuImpFgvWREPErBZmNA4MYKGuBRaCiJqq6jZmBR1x+3y1DWCjez+5uLtuAm6mw=="
+  "resolved" "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.14.25.tgz"
   "version" "0.14.25"
 
 "esbuild@^0.14.14":
