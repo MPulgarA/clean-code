@@ -1,6 +1,6 @@
-export class LocalDataBaseService {
+import localPost from './../data/local-database.json';
 
-    constructor() {}
+export class LocalDataBaseService {
 
     async getFakePosts() {
         return [
@@ -17,5 +17,10 @@ export class LocalDataBaseService {
                 'body': 'est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis qui aperiam non debitis possimus qui neque nisi nulla'
             }]
     }
+}
 
+export class JsonDataBaseService {
+    async getPosts(){
+        return localPost;
+    }
 }
