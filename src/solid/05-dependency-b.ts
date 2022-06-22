@@ -1,4 +1,4 @@
-import { JsonDataBaseService, LocalDataBaseService } from "./05-dependency-c";
+import { JsonDataBaseService, LocalDataBaseService, PostProvider } from './05-dependency-c';
 
 export interface Post {
     body: string;
@@ -12,7 +12,8 @@ export class PostService {
 
     private posts: Post[] = [];
 
-    constructor(private postProvider: JsonDataBaseService) { }
+    // Esta trabajando con una clase abstracta
+    constructor(private postProvider: PostProvider) { }
 
     async getPosts() {
         // en lugar de usar la dependencia oculta, colocaremos la dependencia en el constructor
